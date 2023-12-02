@@ -1,0 +1,132 @@
+/* ======== PRODUCT CARD ======== */
+.product-card {
+    max-width: 357.33px;
+    flex-direction: column;
+    cursor: pointer;
+    border-radius: 1rem;
+    padding-bottom: 14px;
+}
+
+.product-card__img {
+    height: 190px;
+    object-fit: contain;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.product-card__name {
+    color: #ffffff;
+    font-weight: 400;
+    margin-top: 1.5rem;
+}
+
+.product-card__price {
+    color: #ffffff;
+    margin-top: 3px;
+}
+
+.product-card__price-main {
+    color: hsla(0, 0%, 100%, 0.65);
+    margin-top: 5px;
+    margin-left: .5rem;
+    text-decoration: line-through;
+}
+
+.product-card__price-discount {
+    font-size: 2rem;
+}
+
+.product-card__buttons-wrapper {
+    margin-top: 19px;
+}
+
+.btn--add, .btn--order-now {
+    padding: 14px 24px 14px 19px;
+}
+
+.btn--add {
+    color: #ffffff;
+}
+
+.btn--add:hover {
+    background: #2B1205;
+}
+
+.btn--order-now {
+    color: #1B0E07;
+    background: #EF8410;
+    font-weight: 500;
+}
+
+.btn--order-now:hover{
+    background: #EF9330;
+}
+
+/* ======== DASHBOARD ======== */
+.card--dashboard {
+    padding-bottom: 12px;
+    transition: all .2s;
+}
+
+.card--dashboard:hover {
+    background: hsl(21, 59%, 7%, .1);
+}
+
+.card--dashboard .product-card__name, .card--dashboard .product-card__price {
+    color: #1B0E07;
+}
+
+.card--dashboard .product-card__price-main {
+    color: hsla(21, 59%, 7%, 0.85);
+}
+
+.card--dashboard .product-card__button-wrapper {
+    margin-top: 1.3rem;
+    gap: .5rem;
+}
+
+.card--dashboard .product-card__button,
+.card--dashboard .btn--show {
+    background: #ffffff;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.card--dashboard .btn--edit,
+.card--dashboard .btn--remove {
+    border-radius: 0;
+    padding: 14px 0;
+    width: 132px;
+}
+
+.card--dashboard .btn--edit img,
+.card--dashboard .btn--remove img {
+    margin-left: -5px;
+}
+
+.card--dashboard .btn--edit {
+    color: #1B0E07;
+}
+
+.card--dashboard .btn--remove {
+    color: #F32929;
+}
+
+.card--dashboard .btn--show {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card--dashboard .btn--edit:hover,
+.card--dashboard .btn--remove:hover {
+    background: hsl(21, 59%, 7%, .08);
+}
+
+.card--dashboard .btn--show img {
+    opacity: .65;
+    transition: all .2s;
+}
+
+.card--dashboard .btn--show:hover img {
+    opacity: 1;
+}

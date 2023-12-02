@@ -1,0 +1,175 @@
+/* ======== NAVBAR ======== */
+.nav {
+    height: 94px;
+}
+
+.nav__menu {
+    gap: 4rem; /* 64px */
+}
+
+.nav__list {
+    gap: 2.5rem; /* 40px */
+}
+
+.nav__link {
+    color: hsla(19, 89%, 11%, 0.65);
+    transition: color .2s;
+}
+
+.nav__link:hover {
+    color: #1B0E07;
+}
+
+.active-link {
+    position: relative;
+    color: #1B0E07;
+}
+
+.active-link::before {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 1px;
+    width: 32px;
+    height: 2px;
+    background: #1B0E07;
+}
+
+.btn--login {
+    color: #1B0E07;
+    padding: 18px 30px;
+}
+
+.nav__profile:hover .nav__icon-arrow {
+    transform: scale(.8) rotate(90deg) translateX(4px);
+}
+
+.btn--order {
+    position: relative;
+    color: #1B0E07;
+    font-weight: 500;
+    padding: 18px 30px;
+    border: 1.5px solid #1B0E07;
+}
+
+.nav__order-number {
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #1B0E07;
+    background: #EF8410;
+    border: 4px solid #F5F0EB;
+    border-radius: 5rem;
+    padding: 3px 15px;
+}
+
+.btn--login:hover, .btn--order:hover {
+    background: hsla(21, 59%, 7%, 0.1);
+}
+
+.nav__profile {
+    position: relative;
+    margin-right: 1.5rem;
+}
+
+.nav__icon-user {
+    transform: scale(1.2);
+}
+
+.nav__icon-arrow {
+    margin-top: -2px;
+    transform: scale(.8) rotate(90deg);
+    transition: all 0.2s;
+}
+
+.nav__profile:hover .nav__icon-arrow {
+    transform: scale(.8) rotate(90deg) translateX(4px);
+}
+
+.profile {
+    display: none;
+    position: absolute;
+    top: 3.5rem;
+    right: -5px;
+    min-width: 290px;
+    background: #ffffff;
+    padding: 1.9rem 2rem;
+    box-shadow: 0 8px 16px hsla(0, 0%, 0%, 0.2);
+    border-radius: .5rem;
+    z-index: 100;
+    transition: all 0.2s;
+}
+
+.nav__profile:hover .profile {
+    display: block;
+}
+
+.profile__data{
+    margin-bottom: 1.6rem;
+}
+
+.profile__name {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.btn--logout {
+    color: #F32929;
+    font-weight: 500;
+    padding: 14px 24px 14px 19px;
+    background: hsla(21, 59%, 7%, 0.1);
+    margin-bottom: 1rem;
+}
+
+.btn--logout img {
+    margin-left: -6px;
+}
+
+.btn--logout:hover {
+    background: hsla(21, 59%, 7%, 0.06);
+}
+
+.btn--chanpass {
+    color: hsla(23, 60%, 7%, 0.65);
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.btn--chanpass:hover {
+    color: #F32929;
+    text-decoration: underline;
+}
+
+/* ======== DASHBOARD ======== */
+.nav--dark {
+    background-color: #1B0E07;
+}
+
+.nav__container {
+    height: 100%;
+}
+
+.nav--dark .active-link {
+    color: #ffffff;
+}
+
+.nav--dark .active-link::before {
+    background: #ffffff;
+}
+
+.nav--dark .nav__profile {
+    margin-right: 0;
+    padding: 1.5rem 0;
+}
+
+.nav--dark .profile {
+    top: 4rem;
+}
+
+.nav--dark .btn--logout {
+    margin-bottom: 0;
+}
