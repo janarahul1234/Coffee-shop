@@ -35,6 +35,6 @@ We welcome contributions! If you have ideas for new features or improvements, fe
 
 - Project Lead: Rahul Jana
 - Developers: Rahul Jana
-- Logo Design: Rahul Jana
+- Website Design: Rahul Jana
 
 Cheers to a caffeinated journey with the Coffee Shop website! 🚀
